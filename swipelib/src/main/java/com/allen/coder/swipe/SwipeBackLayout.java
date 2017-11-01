@@ -57,6 +57,8 @@ public class SwipeBackLayout extends ViewGroup {
 
     private static final double AUTO_FINISHED_SPEED_LIMIT = 2000.0;
 
+
+
     private final ViewDragHelper viewDragHelper;
 
     private View target;

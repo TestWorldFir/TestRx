@@ -13,11 +13,26 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.name).setOnClickListener(this);
+        findViewById(R.id.view).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(this, OtherActivity.class));
+
+        switch (v.getId()){
+            case R.id.name:
+                startActivity(new Intent(this, OtherActivity.class));
+                break;
+
+
+            case R.id.view:
+
+startActivity(new Intent(this, SwipActivity.class));
+
+                break;
+        }
+
+
     }
 
 

@@ -14,5 +14,11 @@ public class OtherActivity extends SwipeBackActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.other_view);
         setDragEdge(SwipeBackLayout.DragEdge.BOTTOM);
+
+
+
+
+
+
     }
 }

@@ -21,6 +21,9 @@
         <activity
             android:name=".OtherActivity"
             android:theme="@style/ThemeSwipeBack" />
+
+
+        <activity android:name=".SwipActivity" />
     </application>
 
 </manifest>
