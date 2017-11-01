@@ -30,17 +30,17 @@ public class SwipDHLayout extends LinearLayout {
                 return child == mDragView;
             }
 
-
-            @Override
-            public int getViewHorizontalDragRange(View child) {
-                return getMeasuredWidth() - mDragView.getMeasuredWidth();
-            }
-
-
-            @Override
-            public int getViewVerticalDragRange(View child) {
-                return getMeasuredHeight() - mDragView.getMeasuredHeight();
-            }
+//
+//            @Override
+//            public int getViewHorizontalDragRange(View child) {
+//                return getMeasuredWidth() - mDragView.getMeasuredWidth();
+//            }
+//
+//
+//            @Override
+//            public int getViewVerticalDragRange(View child) {
+//                return getMeasuredHeight() - mDragView.getMeasuredHeight();
+//            }
 
             /**
              *
@@ -63,6 +63,7 @@ public class SwipDHLayout extends LinearLayout {
 
             @Override
             public int clampViewPositionVertical(View child, int top, int dy) {
+//                可拖动的最大范围
                 final int topBound = -verticalDragRange;
                 final int bottomBound = getPaddingTop();
                 int result = Math.min(Math.max(top, topBound), bottomBound);
