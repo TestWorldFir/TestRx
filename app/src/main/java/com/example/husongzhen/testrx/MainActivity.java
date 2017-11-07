@@ -19,7 +19,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.name:
                 startActivity(new Intent(this, OtherActivity.class));
                 break;
@@ -27,7 +27,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             case R.id.view:
 
-startActivity(new Intent(this, SwipActivity.class));
+                startActivity(new Intent(this, SwipActivity.class));
 
                 break;
         }
