@@ -59,6 +59,36 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
+
+        final ViewObservable observable = new ViewObservable() {
+            @Override
+            public void subscribe(SubSubject subSubject) {
+
+            }
+        };
+
+
+        ViewObservable nextObservable = new ViewObservable() {
+            @Override
+            public void subscribe(final SubSubject subSubject) {
+                observable.subscribe(new SubSubject() {
+                    @Override
+                    public void next(Object o) {
+                        subSubject.next(o);
+                    }
+                });
+            }
+        };
+
+
+        nextObservable.subscribe(new SubSubject() {
+            @Override
+            public void next(Object o) {
+
+            }
+        });
+
+
 //
 //        Observable
 //                .create(new ObservableOnSubscribe<String>() {
