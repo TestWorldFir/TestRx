@@ -22,6 +22,39 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        switch (1) {
+            case 1:
+
+                break;
+
+
+            case 2:
+
+                break;
+
+            case 3:
+
+                break;
+
+            case 4:
+
+                break;
+
+            case 5:
+
+                break;
+
+            default:
+
+                break;
+        }
+
+
+    }
+
+    private void init() {
         findViewById(R.id.name).setOnClickListener(this);
         findViewById(R.id.view).setOnClickListener(this);
         findViewById(R.id.bottom).setOnClickListener(new View.OnClickListener() {
